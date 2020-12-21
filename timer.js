@@ -7,7 +7,8 @@ var days = {
     "13:00 - 14:00  -",
     "14:00 - 14:40  DSTL-Theory(Dr.Manoj Singhal)",
     "14:45 - 15:25  Maths-IV (Dr.Kirti Upadhyay)",
-    "15:30 - 16:55  DSTL-lab(Ms.Tanya Varshney)"
+    "15:30 - 16:10  DSTL-lab(Ms.Tanya Varshney)",
+    "16:15 - 16:55  DSTL-lab(Ms.Tanya Varshney)"
   ],
   tuesday: [
     "10:05 - 10:45  DSTL-Theory(Dr.Manoj Singhal)",
@@ -15,7 +16,8 @@ var days = {
     "11:35 - 12:15  Maths-IV (Dr.Kirti Upadhyay)",
     "12:20 - 13:00  CSS-(Ms.Neha Yadav)",
     "13:00 - 14:00  -",
-    "14:00 - 15:25  DS-Lab(Ms.Jaya Srivastava)",
+    "14:00 - 14:00  DS-Lab(Ms.Jaya Srivastava)",
+    "14:45 - 15:25  DS-Lab(Ms.Jaya Srivastava)",
     "15:30-16:10    HV-Theory (Ms.Vineeta Chauhan)",
     "16:15 - 16:55  DS-Theory (Mr Deepak Kanojia)"
   ],
@@ -24,6 +26,7 @@ var days = {
     "10:50 - 11:30  COA-Theory(Ms.Shipra Srivastava)",
     "11:35 - 12:15  Maths-IV (Dr.Kirti Upadhyay)",
     "12:20 - 13:00  CSS-(Ms.Neha Yadav)",
+    "13:00 - 14:00  -",
     "14:00 - 14:40  COA-Theory(Ms.Shipra Srivastava)",
     "14:45 - 15:25  CSS-(Ms.Neha Yadav)",
     "15:30-16:10    HV-Theory (Ms.Vineeta Chauhan)",
@@ -36,17 +39,22 @@ var days = {
     "12:20 - 13:00   DS-Theory (Mr Deepak Kanojia)",
     "13:00 - 14:00  -",
     "14:00 - 14:40   CSS-(Ms.Neha Yadav)",
-    "15:30 - 16:55   COA-lab(Ms.Shipra Srivastava)"
+    "14:40 - 15:25  -",
+    "15:30 - 16:10   COA-lab(Ms.Shipra Srivastava)",
+    "16:15 - 16:55   COA-lab(Ms.Shipra Srivastava)"
+
   ],
   friday: [
      "10:05 - 10:45  DSTL-Theory(Dr.Manoj Singhal)",
     "10:50 - 11:30   DS-Theory (Mr Deepak Kanojia)",
     "11:35 - 12:15   CSS(Ms.Neha Yadav) ",
     "12:20 - 13:00   COA-Theory(Ms.Shipra Srivastava) ",
-    "13:00 - 14:00  -",
+    "13:00 - 14:00   -",
     "14:00 - 14:40   DSTL-Theory(Dr.Manoj Singhal)",
     "14:45 - 15:25   Maths-IV (Dr.Kirti Upadhyay)",
-    "15:30 - 16:55   Mini Project(Ms.Jasneet Kaur)"
+    "15:30 - 16:10   Mini Project(Ms.Jasneet Kaur)",
+    "16:15 - 16:55   Mini Project(Ms.Jasneet Kaur)"
+
   ],
   saturday: [],
   sunday: [],
@@ -114,32 +122,34 @@ const display_ongoing_class_name = (timetable) => {
   ) {
     ongoing__class.textContent = timetable[0].split("  ")[1];
   } else if (
-    new Date() >= compute_start_and_end_time(new Date(), "10:50:00") &&
+    new Date() >= compute_start_and_end_time(new Date(), "10:45:00") &&
     new Date() <= compute_start_and_end_time(new Date(), "11:29:59")
   ) {
     ongoing__class.textContent = timetable[1].split("  ")[1];
   } else if (
-    new Date() >= compute_start_and_end_time(new Date(), "11:35:00") &&
+    new Date() >= compute_start_and_end_time(new Date(), "11:30:00") &&
     new Date() <= compute_start_and_end_time(new Date(), "12:14:59")
   ) {
     ongoing__class.textContent = timetable[2].split("  ")[1];
   } else if (
-    new Date() >= compute_start_and_end_time(new Date(), "12:20:00") &&
+    new Date() >= compute_start_and_end_time(new Date(), "12:15:00") &&
     new Date() <= compute_start_and_end_time(new Date(), "12:59:59")
   ) {
     ongoing__class.textContent = timetable[3].split("  ")[1];
-  } else if (
+  } 
+  
+    else if (
     new Date() >= compute_start_and_end_time(new Date(), "14:00:00") &&
     new Date() <= compute_start_and_end_time(new Date(), "14:39:59")
   ) {
     ongoing__class.textContent = timetable[4].split("  ")[1];
   } else if (
-    new Date() >= compute_start_and_end_time(new Date(), "14:45:00") &&
+    new Date() >= compute_start_and_end_time(new Date(), "14:40:00") &&
     new Date() <= compute_start_and_end_time(new Date(), "15:24:59")
   ) {
     ongoing__class.textContent = timetable[5].split("  ")[1];
   } else if (
-    new Date() >= compute_start_and_end_time(new Date(), "15:30:00") &&
+    new Date() >= compute_start_and_end_time(new Date(), "15:25:00") &&
     new Date() <= compute_start_and_end_time(new Date(), "16:09:59")
   ) {
     ongoing__class.textContent = timetable[6].split("  ")[1];
@@ -306,7 +316,7 @@ const highlight_current_class = (i) => {
 // ******************************************************************
 
 const configure_timer = (timetable) => {
-  for (let i = 0; i < 7; i++) {
+  for (let i = 0; i < 8; i++) {
     if (
       new Date() >=
         compute_start_and_end_time(
@@ -316,7 +326,7 @@ const configure_timer = (timetable) => {
       new Date() <
         compute_start_and_end_time(
           new Date(),
-          timetable[i].split(" ")[2] + ":00"
+          timetable[i].split(" ")[8] + ":00"
         )
     ) {
       highlight_current_class(i);
@@ -327,10 +337,35 @@ const configure_timer = (timetable) => {
     new Date() >= compute_start_and_end_time(new Date(), "10:40:00") &&
     new Date() < compute_start_and_end_time(new Date(), "10:45:00")
   ) {
+    configure_timer_in_subcomponent(0, timetable);
+  }
+  else if (
+    new Date() >= compute_start_and_end_time(new Date(), "11:30:00") &&
+    new Date() < compute_start_and_end_time(new Date(), "11:35:00")
+  ) {
+    configure_timer_in_subcomponent(1, timetable);
+  }
+  else if (
+    new Date() >= compute_start_and_end_time(new Date(), "12:15:00") &&
+    new Date() < compute_start_and_end_time(new Date(), "12:20:00")
+  ) {
     configure_timer_in_subcomponent(2, timetable);
-  } else if (
+  }
+  else if (
     new Date() >= compute_start_and_end_time(new Date(), "13:00:00") &&
-    new Date() < compute_start_and_end_time(new Date(), "13:59:59")
+    new Date() < compute_start_and_end_time(new Date(), "14:00:00")
+  ) {
+    configure_timer_in_subcomponent(3, timetable);
+  }
+  else if (
+    new Date() >= compute_start_and_end_time(new Date(), "14:40:00") &&
+    new Date() < compute_start_and_end_time(new Date(), "14:45:00")
+  ) {
+    configure_timer_in_subcomponent(4, timetable);
+  }
+  else if (
+    new Date() >= compute_start_and_end_time(new Date(), "15:25:00") &&
+    new Date() < compute_start_and_end_time(new Date(), "15:30:00")
   ) {
     configure_timer_in_subcomponent(5, timetable);
   }
@@ -341,7 +376,7 @@ const configure_timer = (timetable) => {
 const configure_timer_in_subcomponent = (val, timetable) =>{
   var k, flag;
 
-  for (k = val; k < 7; k++) {
+  for (k = val; k < 8; k++) {
     if (timetable[k].split("  ")[1] !== "-") {
       flag = k;
       break;
@@ -363,7 +398,7 @@ if (
   new Date() >= compute_start_and_end_time(new Date(), "10:05:00") &&
   new Date() <= compute_start_and_end_time(new Date(), "16:54:59")
 ) {
-  if (new Date() < compute_start_and_end_time(new Date(), "13:59:59")) {
+  if (new Date() < compute_start_and_end_time(new Date(), "16:15:00")) {
     var Timer = document.querySelector(".timer");
     for (let i = 0; i < 5; i++) {
       var timerDiv = document.createElement("div");
