@@ -320,13 +320,13 @@ const configure_timer = (timetable) => {
     }
   }
   if (
-    new Date() >= compute_start_and_end_time(new Date(), "10:20:00") &&
-    new Date() < compute_start_and_end_time(new Date(), "10:40:00")
+    new Date() >= compute_start_and_end_time(new Date(), "10:40:00") &&
+    new Date() < compute_start_and_end_time(new Date(), "10:45:00")
   ) {
     configure_timer_in_subcomponent(2, timetable);
   } else if (
-    new Date() >= compute_start_and_end_time(new Date(), "13:25:00") &&
-    new Date() < compute_start_and_end_time(new Date(), "13:45:00")
+    new Date() >= compute_start_and_end_time(new Date(), "13:00:00") &&
+    new Date() < compute_start_and_end_time(new Date(), "13:59:59")
   ) {
     configure_timer_in_subcomponent(5, timetable);
   }
