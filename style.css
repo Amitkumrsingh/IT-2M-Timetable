@@ -136,8 +136,8 @@ hr {
 .subject__codes__flex {
   display: flex;
   flex-wrap: wrap;
-  margin: 10px;
-  padding: 10px;
+  /* margin: 10px;
+  padding: 10px; */
   margin-top: 30px;
 }
 .subject__codes__flex > div {
