@@ -4,6 +4,7 @@ var days = {
     "10:50 - 11:30  DS-Theory (Mr Deepak Kanojia)",
     "11:35 - 12:15  HV-Theory (Ms.Vineeta Chauhan)",
     "12:20 - 13:00  Maths-IV (Dr.Kirti Upadhyay)",
+    "13:00 - 14:00  -",
     "14:00 - 14:40  DSTL-Theory(Dr.Manoj Singhal)",
     "14:45 - 15:25  Maths-IV (Dr.Kirti Upadhyay)",
     "15:30 - 16:30  DSTL-lab(Ms.Tanya Varshney)"
@@ -13,6 +14,7 @@ var days = {
     "10:50 - 11:30  COA-Theory(Ms.Shipra Srivastava)",
     "11:35 - 12:15  Maths-IV (Dr.Kirti Upadhyay)",
     "12:20 - 13:00  CSS-(Ms.Neha Yadav)",
+    "13:00 - 14:00  -",
     "14:00 - 15:25  DS-Lab(Ms.Jaya Srivastava)",
     "15:30-16:10    HV-Theory (Ms.Vineeta Chauhan)",
     "15:30 - 16:30  DS-Theory (Mr Deepak Kanojia)"
@@ -22,6 +24,7 @@ var days = {
     "10:50 - 11:30  COA-Theory(Ms.Shipra Srivastava)",
     "11:35 - 12:15  Maths-IV (Dr.Kirti Upadhyay)",
     "12:20 - 13:00  CSS-(Ms.Neha Yadav)",
+    "13:00 - 14:00  -",
     "14:00 - 14:40  COA-Theory(Ms.Shipra Srivastava)",
     "14:45 - 15:25  CSS-(Ms.Neha Yadav)",
     "15:30-16:10    HV-Theory (Ms.Vineeta Chauhan)",
@@ -32,6 +35,8 @@ var days = {
     "10:50 - 11:30   DSTL-Theory(Dr.Manoj Singhal) ",
     "11:35 - 12:15   COA-Theory(Ms.Shipra Srivastava) ",
     "12:20 - 13:00   DS-Theory (Mr Deepak Kanojia)",
+    "13:00 - 14:00  -",
+
     "14:00 - 14:40   CSS-(Ms.Neha Yadav)",
     "15:30 - 16:30   COA-lab(Ms.Shipra Srivastava)"
   ],
@@ -40,6 +45,8 @@ var days = {
     "10:50 - 11:30   DS-Theory (Mr Deepak Kanojia)",
     "11:35 - 12:15   CSS(Ms.Neha Yadav) ",
     "12:20 - 13:00   COA-Theory(Ms.Shipra Srivastava) ",
+    "13:00 - 14:00  -",
+
     "14:00 - 14:40   DSTL-Theory(Dr.Manoj Singhal)",
     "14:45 - 15:25   Maths-IV (Dr.Kirti Upadhyay)",
     "15:30 - 16:30   Mini Project(Ms.Jasneet Kaur)"
@@ -312,7 +319,7 @@ const configure_timer = (timetable) => {
       new Date() <
         compute_start_and_end_time(
           new Date(),
-          timetable[i].split(" ")[2] + ":00"
+          timetable[i].split(" ")[0] + ":00"
         )
     ) {
       highlight_current_class(i);
@@ -359,7 +366,7 @@ if (
   new Date() >= compute_start_and_end_time(new Date(), "10:05:00") &&
   new Date() <= compute_start_and_end_time(new Date(), "16:54:59")
 ) {
-  if (new Date() < compute_start_and_end_time(new Date(), "15:35:00")) {
+  if (new Date() < compute_start_and_end_time(new Date(), "13:59:59")) {
     var Timer = document.querySelector(".timer");
     for (let i = 0; i < 5; i++) {
       var timerDiv = document.createElement("div");
