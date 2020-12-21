@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IT-2M | Time Table</title>
+
+    <link rel="icon" href="assets/calendar.ico" type="icon/x-icon" />
+
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="app">
+      <div class="header">
+        <h2>Greater Noida Institute of Technology</h2>
+        <p><span>IT-2M</span>, 3rd Semester | Time Table</p>
+      </div>
+    </div>
+      <div class="greeting">
+        <p></p>
+      </div>
+
+      <div class="ongoing__class">
+        <h2>Ongoing class:</h2>
+        <div class="separator"></div>
+        <h3></h3>
+      </div>
+      <hr />
+
+      <div class="next__class">
+        <h2>Next class in:</h2>
+        <div class="separator"></div>
+        <div class="timer"></div>
+      </div>
+      <hr />
+
+      <div class="time__table">
+        <div class="today">
+          <h2></h2>
+        </div>
+
+        <div class="today__time__table mt-4">
+          <!-- p is dynamically added on saturday and sunday -->
+          <!-- div with class myImage is dynamically added on saturday and sunday
+          containing img -->
+
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Time</th>
+                <th scope="col">Class</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="subject__codes">
+        <h2>SUBJECT Codes:</h2>
+        <div class="separator"></div>
+        <div class="subject__codes__flex">
+          <div>
+            <h6>KAS302</h6>
+            <h6>Maths-IV</h6>
+            <h6>Credits: 4</h6>
+          </div>
+          <div>
+            <h6>KVE301</h6>
+            <h6>Universal
+              Human Values</h6>
+            <h6>Credits: 3</h6>
+          </div>
+          <div>
+            <h6>KCS301</h6>
+            <h6>Data Structure</h6>
+            <h6>Credits: 4</h6>
+          </div>
+          <div>
+            <h6>KCS302</h6>
+            <h6>Computer Organization and Architecture</h6>
+            <h6>Credits: 4</h6>
+          </div>
+          <div>
+            <h6>KCS303</h6>
+            <h6>Discrete Structures & Theory
+            of Logic</h6>
+            <h6>Credits: 3</h6>
+          </div>
+          <div>
+            <h6>KCS351</h6>
+            <h6>Data Structures Using C Lab</h6>
+            <h6>Credits: 1</h6>
+          </div>
+          <div>
+            <h6>KCS352</h6>
+            <h6>Computer Organization Lab</h6>
+            <h6>Credits: 1</h6>
+          </div>
+          <div>
+            <h6>KCS353</h6>
+            <h6>Data Structures Using C Lab</h6>
+            <h6>Credits: 1</h6>
+          </div>
+          <div>
+            <h6>KCS354</h6>
+            <h6>Mini Project </h6>
+            <h6>Credits: 1</h6>
+          </div>
+          <div>
+            <h6>KNC302</h6>
+            <h6>Computer System
+              Security</h6>
+            <h6>Credits: 0</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>
+          Developed with ❤️ by
+          <a href="https://github.com/Amitkumrsingh">Amit</a>.
+        </p>
+      </div>
+    </div>
+
+    <script src="timer.js"></script>
+  </body>
+</html>
