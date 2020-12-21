@@ -7,7 +7,7 @@ var days = {
     "13:00 - 14:00  -",
     "14:00 - 14:40  DSTL-Theory(Dr.Manoj Singhal)",
     "14:45 - 15:25  Maths-IV (Dr.Kirti Upadhyay)",
-    "15:30 - 16:30  DSTL-lab(Ms.Tanya Varshney)"
+    "15:30 - 16:55  DSTL-lab(Ms.Tanya Varshney)"
   ],
   tuesday: [
     "10:05 - 10:45  DSTL-Theory(Dr.Manoj Singhal)",
@@ -17,18 +17,17 @@ var days = {
     "13:00 - 14:00  -",
     "14:00 - 15:25  DS-Lab(Ms.Jaya Srivastava)",
     "15:30-16:10    HV-Theory (Ms.Vineeta Chauhan)",
-    "15:30 - 16:30  DS-Theory (Mr Deepak Kanojia)"
+    "16:15 - 16:55  DS-Theory (Mr Deepak Kanojia)"
   ],
   wednesday: [
     "10:05 - 10:45  DSTL-Theory(Dr.Manoj Singhal) ",
     "10:50 - 11:30  COA-Theory(Ms.Shipra Srivastava)",
     "11:35 - 12:15  Maths-IV (Dr.Kirti Upadhyay)",
     "12:20 - 13:00  CSS-(Ms.Neha Yadav)",
-    "13:00 - 14:00  -",
     "14:00 - 14:40  COA-Theory(Ms.Shipra Srivastava)",
     "14:45 - 15:25  CSS-(Ms.Neha Yadav)",
     "15:30-16:10    HV-Theory (Ms.Vineeta Chauhan)",
-    "15:30 - 16:30  DS-Theory (Mr Deepak Kanojia)"
+    "16:15 - 16:55  DS-Theory (Mr Deepak Kanojia)"
   ],
   thursday: [
     "10:05 - 10:45   Maths-IV (Dr.Kirti Upadhyay)",
@@ -36,9 +35,8 @@ var days = {
     "11:35 - 12:15   COA-Theory(Ms.Shipra Srivastava) ",
     "12:20 - 13:00   DS-Theory (Mr Deepak Kanojia)",
     "13:00 - 14:00  -",
-
     "14:00 - 14:40   CSS-(Ms.Neha Yadav)",
-    "15:30 - 16:30   COA-lab(Ms.Shipra Srivastava)"
+    "15:30 - 16:55   COA-lab(Ms.Shipra Srivastava)"
   ],
   friday: [
      "10:05 - 10:45  DSTL-Theory(Dr.Manoj Singhal)",
@@ -46,10 +44,9 @@ var days = {
     "11:35 - 12:15   CSS(Ms.Neha Yadav) ",
     "12:20 - 13:00   COA-Theory(Ms.Shipra Srivastava) ",
     "13:00 - 14:00  -",
-
     "14:00 - 14:40   DSTL-Theory(Dr.Manoj Singhal)",
     "14:45 - 15:25   Maths-IV (Dr.Kirti Upadhyay)",
-    "15:30 - 16:30   Mini Project(Ms.Jasneet Kaur)"
+    "15:30 - 16:55   Mini Project(Ms.Jasneet Kaur)"
   ],
   saturday: [],
   sunday: [],
@@ -81,7 +78,7 @@ const show_image_and_text = () => {
 
 const showTodayTimeTable = (timetable) => {
   const tbody = document.querySelector("table tbody");
-  for (let i = 0; i < 9; i++) {
+  for (let i = 0; i < 8; i++) {
     const tr = document.createElement("tr");
     const td1 = document.createElement("td");
     const td2 = document.createElement("td");
