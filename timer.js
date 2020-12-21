@@ -81,7 +81,7 @@ const show_image_and_text = () => {
 
 const showTodayTimeTable = (timetable) => {
   const tbody = document.querySelector("table tbody");
-  for (let i = 0; i < 7; i++) {
+  for (let i = 0; i < 8; i++) {
     const tr = document.createElement("tr");
     const td1 = document.createElement("td");
     const td2 = document.createElement("td");
