@@ -319,7 +319,7 @@ const configure_timer = (timetable) => {
       new Date() <
         compute_start_and_end_time(
           new Date(),
-          timetable[i].split(" ")[0] + ":00"
+          timetable[i].split(" ")[2] + ":00"
         )
     ) {
       highlight_current_class(i);
