@@ -18,7 +18,7 @@ var days = {
     "13:00 - 14:00  -",
     "14:00 - 14:00  DS-Lab(Ms.Jaya Srivastava)",
     "14:45 - 15:25  DS-Lab(Ms.Jaya Srivastava)",
-    "15:30-16:10    HV-Theory (Ms.Vineeta Chauhan)",
+     "15:30-16:10   HV-Theory (Ms.Vineeta Chauhan)",
     "16:15 - 16:55  DS-Theory (Mr Deepak Kanojia)"
   ],
   wednesday: [
@@ -86,7 +86,7 @@ const show_image_and_text = () => {
 
 const showTodayTimeTable = (timetable) => {
   const tbody = document.querySelector("table tbody");
-  for (let i = 0; i < 8; i++) {
+  for (let i = 0; i < 9; i++) {
     const tr = document.createElement("tr");
     const td1 = document.createElement("td");
     const td2 = document.createElement("td");
@@ -316,7 +316,7 @@ const highlight_current_class = (i) => {
 // ******************************************************************
 
 const configure_timer = (timetable) => {
-  for (let i = 0; i < 8; i++) {
+  for (let i = 0; i < 9; i++) {
     if (
       new Date() >=
         compute_start_and_end_time(
@@ -376,7 +376,7 @@ const configure_timer = (timetable) => {
 const configure_timer_in_subcomponent = (val, timetable) =>{
   var k, flag;
 
-  for (k = val; k < 8; k++) {
+  for (k = val; k < 7; k++) {
     if (timetable[k].split("  ")[1] !== "-") {
       flag = k;
       break;
