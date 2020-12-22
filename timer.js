@@ -4,7 +4,6 @@ var days = {
     "10:50 - 11:30  DS-Theory (Mr Deepak Kanojia)",
     "11:35 - 12:15  HV-Theory (Ms.Vineeta Chauhan)",
     "12:20 - 13:00  Maths-IV (Dr.Kirti Upadhyay)",
-    "13:00 - 14:00  -",
     "14:00 - 14:40  DSTL-Theory(Dr.Manoj Singhal)",
     "14:45 - 15:25  Maths-IV (Dr.Kirti Upadhyay)",
     "15:30 - 16:10  DSTL-lab(Ms.Tanya Varshney)",
@@ -15,10 +14,9 @@ var days = {
     "10:50 - 11:30  COA-Theory(Ms.Shipra Srivastava)",
     "11:35 - 12:15  Maths-IV (Dr.Kirti Upadhyay)",
     "12:20 - 13:00  CSS-(Ms.Neha Yadav)",
-    "13:00 - 14:00  -",
     "14:00 - 14:00  DS-Lab(Ms.Jaya Srivastava)",
     "14:45 - 15:25  DS-Lab(Ms.Jaya Srivastava)",
-     "15:30-16:10   HV-Theory (Ms.Vineeta Chauhan)",
+    "15:30 - 16:10  HV-Theory (Ms.Vineeta Chauhan)",
     "16:15 - 16:55  DS-Theory (Mr Deepak Kanojia)"
   ],
   wednesday: [
@@ -26,10 +24,9 @@ var days = {
     "10:50 - 11:30  COA-Theory(Ms.Shipra Srivastava)",
     "11:35 - 12:15  Maths-IV (Dr.Kirti Upadhyay)",
     "12:20 - 13:00  CSS-(Ms.Neha Yadav)",
-    "13:00 - 14:00  -",
     "14:00 - 14:40  COA-Theory(Ms.Shipra Srivastava)",
     "14:45 - 15:25  CSS-(Ms.Neha Yadav)",
-    "15:30-16:10    HV-Theory (Ms.Vineeta Chauhan)",
+    "15:30 - 16:10  HV-Theory(Ms.Vineeta Chauhan)",
     "16:15 - 16:55  DS-Theory (Mr Deepak Kanojia)"
   ],
   thursday: [
@@ -37,7 +34,6 @@ var days = {
     "10:50 - 11:30   DSTL-Theory(Dr.Manoj Singhal) ",
     "11:35 - 12:15   COA-Theory(Ms.Shipra Srivastava) ",
     "12:20 - 13:00   DS-Theory (Mr Deepak Kanojia)",
-    "13:00 - 14:00  -",
     "14:00 - 14:40   CSS-(Ms.Neha Yadav)",
     "14:40 - 15:25  -",
     "15:30 - 16:10   COA-lab(Ms.Shipra Srivastava)",
@@ -49,7 +45,6 @@ var days = {
     "10:50 - 11:30   DS-Theory (Mr Deepak Kanojia)",
     "11:35 - 12:15   CSS(Ms.Neha Yadav) ",
     "12:20 - 13:00   COA-Theory(Ms.Shipra Srivastava) ",
-    "13:00 - 14:00   -",
     "14:00 - 14:40   DSTL-Theory(Dr.Manoj Singhal)",
     "14:45 - 15:25   Maths-IV (Dr.Kirti Upadhyay)",
     "15:30 - 16:10   Mini Project(Ms.Jasneet Kaur)",
@@ -86,7 +81,7 @@ const show_image_and_text = () => {
 
 const showTodayTimeTable = (timetable) => {
   const tbody = document.querySelector("table tbody");
-  for (let i = 0; i < 9; i++) {
+  for (let i = 0; i < 8; i++) {
     const tr = document.createElement("tr");
     const td1 = document.createElement("td");
     const td2 = document.createElement("td");
@@ -137,7 +132,7 @@ const display_ongoing_class_name = (timetable) => {
   ) {
     ongoing__class.textContent = timetable[3].split("  ")[1];
   } 
-  
+
     else if (
     new Date() >= compute_start_and_end_time(new Date(), "14:00:00") &&
     new Date() <= compute_start_and_end_time(new Date(), "14:39:59")
@@ -316,7 +311,7 @@ const highlight_current_class = (i) => {
 // ******************************************************************
 
 const configure_timer = (timetable) => {
-  for (let i = 0; i < 9; i++) {
+  for (let i = 0; i < 7; i++) {
     if (
       new Date() >=
         compute_start_and_end_time(
@@ -326,49 +321,27 @@ const configure_timer = (timetable) => {
       new Date() <
         compute_start_and_end_time(
           new Date(),
-          timetable[i].split(" ")[8] + ":00"
+          timetable[i].split(" ")[2] + ":00"
         )
     ) {
       highlight_current_class(i);
       configure_timer_in_subcomponent(i + 1, timetable);
     }
   }
-  if (
-    new Date() >= compute_start_and_end_time(new Date(), "10:40:00") &&
-    new Date() < compute_start_and_end_time(new Date(), "10:45:00")
-  ) {
-    configure_timer_in_subcomponent(0, timetable);
-  }
-  else if (
-    new Date() >= compute_start_and_end_time(new Date(), "11:30:00") &&
-    new Date() < compute_start_and_end_time(new Date(), "11:35:00")
-  ) {
-    configure_timer_in_subcomponent(1, timetable);
-  }
-  else if (
-    new Date() >= compute_start_and_end_time(new Date(), "12:15:00") &&
-    new Date() < compute_start_and_end_time(new Date(), "12:20:00")
-  ) {
-    configure_timer_in_subcomponent(2, timetable);
-  }
-  else if (
+  // if (
+  //   new Date() >= compute_start_and_end_time(new Date(), "10:40:00") &&
+  //   new Date() < compute_start_and_end_time(new Date(), "10:45:00")
+  // ) {
+  //   configure_timer_in_subcomponent(2, timetable);
+  // }
+  
+   if (
     new Date() >= compute_start_and_end_time(new Date(), "13:00:00") &&
     new Date() < compute_start_and_end_time(new Date(), "14:00:00")
   ) {
-    configure_timer_in_subcomponent(3, timetable);
-  }
-  else if (
-    new Date() >= compute_start_and_end_time(new Date(), "14:40:00") &&
-    new Date() < compute_start_and_end_time(new Date(), "14:45:00")
-  ) {
     configure_timer_in_subcomponent(4, timetable);
   }
-  else if (
-    new Date() >= compute_start_and_end_time(new Date(), "15:25:00") &&
-    new Date() < compute_start_and_end_time(new Date(), "15:30:00")
-  ) {
-    configure_timer_in_subcomponent(5, timetable);
-  }
+  
 };
 
 // ********************************************************************
@@ -376,7 +349,7 @@ const configure_timer = (timetable) => {
 const configure_timer_in_subcomponent = (val, timetable) =>{
   var k, flag;
 
-  for (k = val; k < 7; k++) {
+  for (k = val; k < 8; k++) {
     if (timetable[k].split("  ")[1] !== "-") {
       flag = k;
       break;
