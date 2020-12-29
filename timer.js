@@ -14,7 +14,7 @@ var days = {
     "10:50 - 11:30  COA-Theory(Ms.Shipra Srivastava)",
     "11:35 - 12:15  Maths-IV (Dr.Kirti Upadhyay)",
     "12:20 - 13:00  CSS-(Ms.Neha Yadav)",
-    "14:00 - 14:00  DS-Lab(Ms.Jaya Srivastava)",
+    "14:00 - 14:40  DS-Lab(Ms.Jaya Srivastava)",
     "14:45 - 15:25  DS-Lab(Ms.Jaya Srivastava)",
     "15:30 - 16:10  HV-Theory (Ms.Vineeta Chauhan)",
     "16:15 - 16:55  DS-Theory (Mr Deepak Kanojia)"
@@ -321,7 +321,7 @@ const configure_timer = (timetable) => {
       new Date() <
         compute_start_and_end_time(
           new Date(),
-          timetable[i].split(" ")[2] + ":00"
+          timetable[i].split(" ")[4] + ":00"
         )
     ) {
       highlight_current_class(i);
