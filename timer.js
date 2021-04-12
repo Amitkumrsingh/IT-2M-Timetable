@@ -168,7 +168,7 @@ const show_ongoing_class_status = (timetable) => {
   if (!timetable.length) ongoing__class.textContent = "-";
   else {
     if (
-      new Date() >= compute_start_and_end_time(new Date(), "10:05:00") &&
+      new Date() >= compute_start_and_end_time(new Date(), "09:15:00") &&
       new Date() <= compute_start_and_end_time(new Date(), "16:54:59")
     )
       display_ongoing_class_name(timetable);
