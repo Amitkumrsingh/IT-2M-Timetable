@@ -1,54 +1,59 @@
 var days = {
   monday: [
-    "10:05 - 10:45  COA-Theory(Ms.Shipra Srivastava) ",
-    "10:50 - 11:30  DS-Theory (Mr Deepak Kanojia)",
-    "11:35 - 12:15  HV-Theory (Ms.Vineeta Chauhan)",
-    "12:20 - 13:00  Maths-IV (Dr.Kirti Upadhyay)",
-    "14:00 - 14:40  DSTL-Theory(Dr.Manoj Singhal)",
-    "14:45 - 15:25  Maths-IV (Dr.Kirti Upadhyay)",
-    "15:30 - 16:10  DSTL-lab(Ms.Tanya Varshney)",
-    "16:15 - 16:55  DSTL-lab(Ms.Tanya Varshney)"
+    "9:15 - 10:05  TALF(Ms. Shiva Soni)",
+    "10:05 - 10:55  SI(Mr.Harish Dalal) ",
+    "10:50 - 11:45  TALF(Ms. Shiva Soni)",
+    "11:45 - 12:35  OS (Ms.Rifa Nizam Khan)",
+   
+    "13:35 - 14:25  QUANT",
+    "14:25 - 15:15  QUANT",
+    "15:15 - 16:05  WD(Mr.S.S.Pal)",
+    "16:05 - 16:55  PP(Ms.Shyla singh)"
   ],
   tuesday: [
-    "10:05 - 10:45  DSTL-Theory(Dr.Manoj Singhal)",
-    "10:50 - 11:30  COA-Theory(Ms.Shipra Srivastava)",
-    "11:35 - 12:15  Maths-IV (Dr.Kirti Upadhyay)",
-    "12:20 - 13:00  CSS-(Ms.Neha Yadav)",
-    "14:00 - 14:40  DS-Lab(Ms.Jaya Srivastava)",
-    "14:45 - 15:25  DS-Lab(Ms.Jaya Srivastava)",
-    "15:30 - 16:10  HV-Theory (Ms.Vineeta Chauhan)",
-    "16:15 - 16:55  DS-Theory (Mr Deepak Kanojia)"
+    "9:15 - 10:05   WD(Mr.S.S.Pal)",
+    "10:05 - 10:55  SI(Mr.Harish Dalal) ",
+    "10:50 - 11:45  PP(Ms.Shyla singh)",
+    "11:45 - 12:35  TALF(Ms. Shiva Soni)",
+  
+    "13:35 - 14:25  OS (Ms.Rifa Nizam Khan)",
+    "14:25 - 15:15  SI(Mr.Harish Dalal)",
+    "15:15 - 16:05  OS (Ms.Rifa Nizam Khan)",
+    "16:05 - 16:55  TC(Ms.SB)"
   ],
   wednesday: [
-    "10:05 - 10:45  DSTL-Theory(Dr.Manoj Singhal) ",
-    "10:50 - 11:30  COA-Theory(Ms.Shipra Srivastava)",
-    "11:35 - 12:15  Maths-IV (Dr.Kirti Upadhyay)",
-    "12:20 - 13:00  CSS-(Ms.Neha Yadav)",
-    "14:00 - 14:40  COA-Theory(Ms.Shipra Srivastava)",
-    "14:45 - 15:25  CSS-(Ms.Neha Yadav)",
-    "15:30 - 16:10  HV-Theory(Ms.Vineeta Chauhan)",
-    "16:15 - 16:55  DS-Theory (Mr Deepak Kanojia)"
+    "9:15 - 10:05  SI(Mr.Harish Dalal) ",
+    "10:05 - 10:55  PDP ",
+    "10:50 - 11:45  PDP",
+    "11:45 - 12:35   TALF(Ms. Shiva Soni)",
+
+    "13:35 - 14:25  PP(Ms.Shyla singh)",
+    "14:25 - 15:15  WD(Mr.S.S.Pal)",
+    "15:15 - 16:05  WD-L(Ms UMA TOMER)",
+    "16:05 - 16:55  WD-L(Ms UMA TOMER)"
   ],
   thursday: [
-    "10:05 - 10:45   Maths-IV (Dr.Kirti Upadhyay)",
-    "10:50 - 11:30   DSTL-Theory(Dr.Manoj Singhal) ",
-    "11:35 - 12:15   COA-Theory(Ms.Shipra Srivastava) ",
-    "12:20 - 13:00   DS-Theory (Mr Deepak Kanojia)",
-    "14:00 - 14:40   CSS-(Ms.Neha Yadav)",
-    "14:40 - 15:25  -",
-    "15:30 - 16:10   COA-lab(Ms.Shipra Srivastava)",
-    "16:15 - 16:55   COA-lab(Ms.Shipra Srivastava)"
+    "9:15 - 10:05  OS (Ms.Rifa Nizam Khan)",
+    "10:05 - 10:55  SI(Mr.Harish Dalal) ",
+    "10:50 - 11:45   TC(Ms.SB)",
+    "11:45 - 12:35  PP(Ms.Shyla singh)",
+   
+    "13:35 - 14:25  TALF(Ms. Shiva Soni)",
+    "14:25 - 15:15  WD(Mr.S.S.Pal)",
+    "15:15 - 16:05  PP-L(Ms. Shiva soni)",
+    "16:05 - 16:55  PP-L(Ms. Shiva soni)"
 
   ],
   friday: [
-     "10:05 - 10:45  DSTL-Theory(Dr.Manoj Singhal)",
-    "10:50 - 11:30   DS-Theory (Mr Deepak Kanojia)",
-    "11:35 - 12:15   CSS(Ms.Neha Yadav) ",
-    "12:20 - 13:00   COA-Theory(Ms.Shipra Srivastava) ",
-    "14:00 - 14:40   DSTL-Theory(Dr.Manoj Singhal)",
-    "14:45 - 15:25   Maths-IV (Dr.Kirti Upadhyay)",
-    "15:30 - 16:10   Mini Project(Ms.Jasneet Kaur)",
-    "16:15 - 16:55   Mini Project(Ms.Jasneet Kaur)"
+    "9:15 - 10:05  PP(Ms.Shyla singh)",
+    "10:05 - 10:55  WD(Mr.S.S.Pal) ",
+    "10:50 - 11:45   OS (Ms.Rifa Nizam Khan) ",
+    "11:45 - 12:35   TC(Ms.SB)",
+   
+    "13:35 - 14:25  TALF(Ms. Shiva Soni)",
+    "14:25 - 15:15  SI(Mr.Harish Dalal)",
+    "15:15 - 16:05  OS-L(Ms.Shyla Singh)",
+    "16:05 - 16:55  OS-L(Ms.Shyla Singh) "
 
   ],
   saturday: [],
@@ -112,44 +117,44 @@ const compute_start_and_end_time = (currentTime, time) => {
 const display_ongoing_class_name = (timetable) => {
   const ongoing__class = document.querySelector(".ongoing__class h3");
   if (
-    new Date() >= compute_start_and_end_time(new Date(), "10:05:00") &&
-    new Date() <= compute_start_and_end_time(new Date(), "10:44:59")
+    new Date() >= compute_start_and_end_time(new Date(), "09:15:00") &&
+    new Date() <= compute_start_and_end_time(new Date(), "10:04:59")
   ) {
     ongoing__class.textContent = timetable[0].split("  ")[1];
   } else if (
-    new Date() >= compute_start_and_end_time(new Date(), "10:45:00") &&
-    new Date() <= compute_start_and_end_time(new Date(), "11:29:59")
+    new Date() >= compute_start_and_end_time(new Date(), "10:05:00") &&
+    new Date() <= compute_start_and_end_time(new Date(), "10:54:59")
   ) {
     ongoing__class.textContent = timetable[1].split("  ")[1];
   } else if (
-    new Date() >= compute_start_and_end_time(new Date(), "11:30:00") &&
-    new Date() <= compute_start_and_end_time(new Date(), "12:14:59")
+    new Date() >= compute_start_and_end_time(new Date(), "10:55:00") &&
+    new Date() <= compute_start_and_end_time(new Date(), "11:44:59")
   ) {
     ongoing__class.textContent = timetable[2].split("  ")[1];
   } else if (
-    new Date() >= compute_start_and_end_time(new Date(), "12:15:00") &&
-    new Date() <= compute_start_and_end_time(new Date(), "12:59:59")
+    new Date() >= compute_start_and_end_time(new Date(), "11:45:00") &&
+    new Date() <= compute_start_and_end_time(new Date(), "12:34:59")
   ) {
     ongoing__class.textContent = timetable[3].split("  ")[1];
   } 
 
     else if (
-    new Date() >= compute_start_and_end_time(new Date(), "14:00:00") &&
-    new Date() <= compute_start_and_end_time(new Date(), "14:39:59")
+    new Date() >= compute_start_and_end_time(new Date(), "13:35:00") &&
+    new Date() <= compute_start_and_end_time(new Date(), "14:24:59")
   ) {
     ongoing__class.textContent = timetable[4].split("  ")[1];
   } else if (
-    new Date() >= compute_start_and_end_time(new Date(), "14:40:00") &&
-    new Date() <= compute_start_and_end_time(new Date(), "15:24:59")
+    new Date() >= compute_start_and_end_time(new Date(), "14:25:00") &&
+    new Date() <= compute_start_and_end_time(new Date(), "15:14:59")
   ) {
     ongoing__class.textContent = timetable[5].split("  ")[1];
   } else if (
-    new Date() >= compute_start_and_end_time(new Date(), "15:25:00") &&
-    new Date() <= compute_start_and_end_time(new Date(), "16:09:59")
+    new Date() >= compute_start_and_end_time(new Date(), "15:15:00") &&
+    new Date() <= compute_start_and_end_time(new Date(), "16:04:59")
   ) {
     ongoing__class.textContent = timetable[6].split("  ")[1];
   } else if (
-    new Date() >= compute_start_and_end_time(new Date(), "16:10:00") &&
+    new Date() >= compute_start_and_end_time(new Date(), "16:05:00") &&
     new Date() <= compute_start_and_end_time(new Date(), "16:54:59")
   ) {
     ongoing__class.textContent = timetable[7].split("  ")[1];
