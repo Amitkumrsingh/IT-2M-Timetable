@@ -341,8 +341,8 @@ const configure_timer = (timetable) => {
   // }
   
    if (
-    new Date() >= compute_start_and_end_time(new Date(), "13:00:00") &&
-    new Date() < compute_start_and_end_time(new Date(), "14:00:00")
+    new Date() >= compute_start_and_end_time(new Date(), "12:35:00") &&
+    new Date() < compute_start_and_end_time(new Date(), "13:35:00")
   ) {
     configure_timer_in_subcomponent(4, timetable);
   }
@@ -373,10 +373,10 @@ const configure_timer_in_subcomponent = (val, timetable) =>{
 if (
   new Date().getDay() > 0 &&
   new Date().getDay() < 6 &&
-  new Date() >= compute_start_and_end_time(new Date(), "10:05:00") &&
+  new Date() >= compute_start_and_end_time(new Date(), "09:15:00") &&
   new Date() <= compute_start_and_end_time(new Date(), "16:54:59")
 ) {
-  if (new Date() < compute_start_and_end_time(new Date(), "16:15:00")) {
+  if (new Date() < compute_start_and_end_time(new Date(), "16:05:00")) {
     var Timer = document.querySelector(".timer");
     for (let i = 0; i < 5; i++) {
       var timerDiv = document.createElement("div");
@@ -416,5 +416,5 @@ if (
 } else if (new Date() > compute_start_and_end_time(new Date(), "16:54:59")) {
   create_para_in_timer("All classes are over for today! 🕺");
 } else {
-  create_para_in_timer("First class will begin at 10:05 a.m. 📚");
+  create_para_in_timer("First class will begin at 09:15 a.m. 📚");
 }
