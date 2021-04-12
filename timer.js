@@ -1,8 +1,8 @@
 var days = {
   monday: [
-    "9:15 - 10:05  TALF(Ms. Shiva Soni)",
+    "9:15 - 10:05  TAFL(Ms. Shiva Soni)",
     "10:05 - 10:55  SI(Mr.Harish Dalal) ",
-    "10:50 - 11:45  TALF(Ms. Shiva Soni)",
+    "10:50 - 11:45  TAFL(Ms. Shiva Soni)",
     "11:45 - 12:35  OS (Ms.Rifa Nizam Khan)",
    
     "13:35 - 14:25  QUANT",
@@ -14,7 +14,7 @@ var days = {
     "9:15 - 10:05   WD(Mr.S.S.Pal)",
     "10:05 - 10:55  SI(Mr.Harish Dalal) ",
     "10:50 - 11:45  PP(Ms.Shyla singh)",
-    "11:45 - 12:35  TALF(Ms. Shiva Soni)",
+    "11:45 - 12:35  TAFL(Ms. Shiva Soni)",
   
     "13:35 - 14:25  OS (Ms.Rifa Nizam Khan)",
     "14:25 - 15:15  SI(Mr.Harish Dalal)",
@@ -25,7 +25,7 @@ var days = {
     "9:15 - 10:05  SI(Mr.Harish Dalal) ",
     "10:05 - 10:55  PDP ",
     "10:50 - 11:45  PDP",
-    "11:45 - 12:35   TALF(Ms. Shiva Soni)",
+    "11:45 - 12:35   TAFL(Ms. Shiva Soni)",
 
     "13:35 - 14:25  PP(Ms.Shyla singh)",
     "14:25 - 15:15  WD(Mr.S.S.Pal)",
@@ -38,7 +38,7 @@ var days = {
     "10:50 - 11:45   TC(Ms.SB)",
     "11:45 - 12:35  PP(Ms.Shyla singh)",
    
-    "13:35 - 14:25  TALF(Ms. Shiva Soni)",
+    "13:35 - 14:25  TAFL(Ms. Shiva Soni)",
     "14:25 - 15:15  WD(Mr.S.S.Pal)",
     "15:15 - 16:05  PP-L(Ms. Shiva soni)",
     "16:05 - 16:55  PP-L(Ms. Shiva soni)"
@@ -50,7 +50,7 @@ var days = {
     "10:50 - 11:45   OS (Ms.Rifa Nizam Khan) ",
     "11:45 - 12:35   TC(Ms.SB)",
    
-    "13:35 - 14:25  TALF(Ms. Shiva Soni)",
+    "13:35 - 14:25  TAFL(Ms. Shiva Soni)",
     "14:25 - 15:15  SI(Mr.Harish Dalal)",
     "15:15 - 16:05  OS-L(Ms.Shyla Singh)",
     "16:05 - 16:55  OS-L(Ms.Shyla Singh) "
