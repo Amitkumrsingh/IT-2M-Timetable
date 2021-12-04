@@ -1,31 +1,31 @@
 var days = {
   monday: [
-    "9:15 - 10:05  TAFL(Ms. Shiva Soni)",
-    "10:05 - 10:55  SI(Mr.Harish Dalal) ",
-    "10:50 - 11:45  TAFL(Ms. Shiva Soni)",
-    "11:45 - 12:35  OS (Ms.Rifa Nizam Khan)",
-   
-    "13:35 - 14:25  QUANT",
-    "14:25 - 15:15  QUANT",
-    "15:15 - 16:05  WD(Mr.S.S.Pal)",
-    "16:05 - 16:55  PP(Ms.Shyla singh)"
+    "9:15 - 10:05  ML(M.N)",
+    "10:05 - 10:55  COI(V.C) ",
+    "10:50 - 11:45  DAA Lab(B.S)",
+    "11:45 - 12:35   DAA Lab(B.S)",
+     
+    "13:35 - 14:25  DAA(B.S)",
+    "14:25 - 15:15  OOSD(U.T)",
+    "15:15 - 16:05  DBMS(M.C)",
+    "16:05 - 16:55  DAA(R.B)"
   ],
   tuesday: [
-    "9:15 - 10:05   WD(Mr.S.S.Pal)",
-    "10:05 - 10:55  SI(Mr.Harish Dalal) ",
-    "10:50 - 11:45  PP(Ms.Shyla singh)",
-    "11:45 - 12:35  TAFL(Ms. Shiva Soni)",
+    "9:15 - 10:05   OOSD(U.T)",
+    "10:05 - 10:55  W.T(R.B) ",
+    "10:50 - 11:45  DBMS(M.C)",
+    "11:45 - 12:35  DAA(R.B)",
   
-    "13:35 - 14:25  OS (Ms.Rifa Nizam Khan)",
-    "14:25 - 15:15  SI(Mr.Harish Dalal)",
-    "15:15 - 16:05  OS (Ms.Rifa Nizam Khan)",
-    "16:05 - 16:55  TC(Ms.SB)"
+    "13:35 - 14:25  ML(M.N)",
+    "14:25 - 15:15  W.T(R.B)",
+    "15:15 - 16:05  W.T Lab(R.B)",
+    "16:05 - 16:55  W.T Lab(R.B)"
   ],
   wednesday: [
-    "9:15 - 10:05  SI(Mr.Harish Dalal) ",
-    "10:05 - 10:55  PDP ",
-    "10:50 - 11:45  PDP",
-    "11:45 - 12:35   TAFL(Ms. Shiva Soni)",
+    "9:15 - 10:05   DBMS(M.C)",
+    "10:05 - 10:55  ML(M.N)",
+    "10:50 - 11:45  OOSD(U.T)",
+    "11:45 - 12:35  W.T(R.B)",
 
     "13:35 - 14:25  PP(Ms.Shyla singh)",
     "14:25 - 15:15  WD(Mr.S.S.Pal)",
